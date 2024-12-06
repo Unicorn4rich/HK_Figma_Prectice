@@ -1,13 +1,18 @@
 import React from 'react'
 import Redbox from './redbox'
-import { ChevronLeft, ChevronRight, icons } from 'lucide-react'
+import { ChevronLeft, ChevronRight, Eye, Heart, icons, Star, Trash2 } from 'lucide-react'
 import { Button } from './ui/button'
+import { Card } from './ui/card'
+import Image from "next/image"
+import { Badge } from './ui/badge'
+import ProductCard from './productCard'
+import { flashCard_data } from './constant/fleshCards'
 
 function FlashSale() {
   return (
     <>
 
-    <section className='mb-[500px]'>
+    <section className='border-b-[1px] border-gray-300 pb-[60px]'>
 
          {/* todays div component */}
          <Redbox text={"Today`s"} textColor={"red"} />
@@ -80,6 +85,25 @@ function FlashSale() {
          </div>
 
          </div>
+
+
+
+        
+         {/* Cards Div main */}
+        <div>
+
+          <div className='w-[1308px] mt-[40px] flex gap-[30px] overflow-x-auto '>
+
+            {/* Card div component loop */}
+           <ProductCard loop={flashCard_data}/>     {/* productCard ke component ke andar ham aik props bhej rhy hain jo apne sath typesrcipt ka data ley kar jaa rha hai jis se ham cards ki details dynamicly change karenge. */}
+          </div>
+
+          <div className='text-center mt-[60px]'>
+          <button className='py-[16px] px-[48px] text-white bg-[#DB4444] rounded-[4px] hover:bg-red-600'>View All Products</button>
+          </div>
+
+        </div>
+
 
     </section>
 
