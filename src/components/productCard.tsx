@@ -5,7 +5,6 @@ import { Badge } from './ui/badge'
 import { Button } from './ui/button'
 import { Eye, Heart, Star, Trash2 } from 'lucide-react'
 import { FLashCard } from './constant/fleshCards'
-import { tree } from 'next/dist/build/templates/app-page'
 
 
 function ProductCard({loop}: {loop: FLashCard[]}) {

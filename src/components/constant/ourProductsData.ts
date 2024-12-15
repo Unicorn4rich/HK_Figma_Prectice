@@ -53,8 +53,7 @@ export const ourProducts_data = [
         newPrice: 360,
         star: 4,
         revews: 95,
-        colorDiv: true,
-        color1: "red"
+        colorDiv: false,
     },
     {
         discountBadge: true,
@@ -68,7 +67,9 @@ export const ourProducts_data = [
         newPrice: 960,
         star: 5,
         revews: 65,
-        colorDiv: false,
+        colorDiv: true,
+        color1: "bg-black",
+        color2: "red",
     },
     {
         discountBadge: false,
@@ -82,7 +83,10 @@ export const ourProducts_data = [
         newPrice: 360,
         star: 4,
         revews: 95,
-        colorDiv: false,
+        colorDiv: true,
+        color1: "bg-black",
+        color2: "red",
+
     },
     {
         discountBadge: true,
@@ -96,7 +100,9 @@ export const ourProducts_data = [
         newPrice: 660,
         star: 5,
         revews: 55,
-        colorDiv: false,
+        colorDiv: true,
+        color1: "bg-black",
+        color2: "red",
     },
     {
         discountBadge: false,
@@ -110,6 +116,8 @@ export const ourProducts_data = [
         newPrice: 360,
         star: 4,
         revews: 95,
-        colorDiv: false,
+        colorDiv: true,
+        color1: "bg-black",
+        color2: "red",
     },
 ]

@@ -3,6 +3,8 @@ import Hero from "@/components/hero"
 import Category from "@/components/category";
 import Month from "@/components/month";
 import OurProducts from "@/components/ourProducts";
+import Feature from "@/components/feature";
+import ProductShow from "@/components/foot";
 
 export default function Home() {
   return (
@@ -13,6 +15,7 @@ export default function Home() {
        <Category/>
        <Month/>
        <OurProducts/>
+       <Feature/>
 
    </div>
   );

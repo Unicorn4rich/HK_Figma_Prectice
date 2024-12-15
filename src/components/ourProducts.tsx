@@ -10,7 +10,7 @@ function OurProducts() {
   return (
     <>
 
-       <section className='w-full mt-[71px]  mb-[400px]'>
+       <section className='w-full mt-[71px]'>
 
         {/* Red heading */}
         <Redbox text={"Our Products"} textColor={"red"}/>
@@ -35,7 +35,7 @@ function OurProducts() {
 
 
         {/* Card divs grid */}
-        <div className='w-full h-[732px] grid gap-[30px] grid-cols-4 bg-yellow-200 mt-[60px]'>
+        <div className='w-full h-[732px] grid gap-[30px] grid-cols-4 mt-[60px]'>
 
           {ourProducts_data.map((item, index)=>{
             return(
@@ -47,9 +47,10 @@ function OurProducts() {
                     
 
                     {/* Badge */}
-                    {item.discountBadge && 
-                    <Badge className='bg-green-400 py-[4px] px-3 absolute top-3 left-3 '>{item.discountPrice}</Badge>
-                    }
+                    {item.discountBadge == true && 
+                    <Badge className='bg-green-400 py-[4px] px-3 absolute top-3 left-3 '>
+                        {item.discountPrice}
+                    </Badge>}
     
 
 
@@ -107,11 +108,27 @@ function OurProducts() {
                      
                 </div>
 
+                {/* last 3 */}
+                {/** inko mujhe float dena hai ye jagah capture kar ke opar waly div ke size ko khrab kar rhy hain */}
+
+                {item.colorDiv == true &&                           
+                <div className='flex items-center gap-2 mt-1'>
+                <div className={`w-[20px] h-[20px] rounded-full border-[1px] border-black ${item.color1}`}></div>
+
+                <div className={`w-[20px] h-[20px] rounded-full border-[1px] border-black bg-${item.color2}-500`}></div>
+                </div>
+                }
+
 
                </Card>
             )
           })}
 
+        </div>
+
+
+        <div className='text-center mt-[60px]'>
+          <button className='py-[16px] px-[48px] text-white bg-[#DB4444] rounded-[4px] hover:bg-red-600'>View All Products</button>
         </div>
 
        </section>

@@ -22,6 +22,7 @@ function FlashSale() {
 
          {/* Flash Slaes */}
          <div className='mt-[24px] flex items-center'>
+
             <h1 className='text-[36px] leading-[48px] font-semibold inline-block '>Flash Sales</h1>
 
 
@@ -75,6 +76,7 @@ function FlashSale() {
 
          {/* arrows divs */}
          <div className='flex gap-2'>
+
             <Button size={"icon"} variant={"outline"} className='rounded-full '>
                 <ChevronLeft size={24}/>
             </Button>
@@ -82,6 +84,7 @@ function FlashSale() {
             <Button size={"icon"} variant={"outline"} className='rounded-full '>
                 <ChevronRight size={24}/>
             </Button>
+
          </div>
 
          </div>
@@ -93,9 +96,9 @@ function FlashSale() {
         <div>
 
           <div className='w-[1308px] mt-[40px] flex gap-[30px] overflow-x-auto '>
-
             {/* Card div component loop */}
            <ProductCard loop={flashCard_data}/>     {/* productCard ke component ke andar ham aik props bhej rhy hain jo apne sath typesrcipt ka data ley kar jaa rha hai jis se ham cards ki details dynamicly change karenge. */}
+           
           </div>
 
           <div className='text-center mt-[60px]'>
